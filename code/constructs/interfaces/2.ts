@@ -20,7 +20,7 @@ interface Vehicle{
 interface Owner{
     name: string,
     age: number,
-    gender? : string
+    gender?: string
 }
 
 // What we are saying here is a Vehicle can have multiple Owners
@@ -53,6 +53,6 @@ let v3 = {
             ]
 };
 
-console.log(getOwners(v1)); // logs undefined
+console.log(getOwners(v1)); // logs undefined, should check in the function if property exists?
 console.log(getOwners(v2)); // logs []
 console.log(getOwners(v3)); // logs the two objects Sam and Pavan
